@@ -127,7 +127,7 @@ int main() {
     Book books[SIZE] = {
         Book(101, 4.5, 299.99, 'A', false, "C++ Primer", TECHNOLOGY),
         Book(102, 3.8, 150.00, 'B', true, "Design Patterns", SCIENCE),
-        Book() // default
+        Book() 
     };
 
     int choice;
