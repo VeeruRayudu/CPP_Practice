@@ -14,6 +14,7 @@ class ObjectDistance{
     float getCameraDistance() const {return camera_distance;}
 
     void adjustDistanceByValue(ObjectDistance obj){
+        //calibration
         obj.radar_distance+=5.0;
         obj.camera_distance+=5.0;
 
