@@ -1,0 +1,4 @@
+- Grouped lambdas by capture type.
+- Renamed outputs for clarity: Added labels like "Fuel Efficiency:" .
+- Added headers and spacing.
+- Used consistent spacing and indentation.

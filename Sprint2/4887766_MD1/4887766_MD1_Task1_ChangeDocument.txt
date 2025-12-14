@@ -1,0 +1,15 @@
+Changes Made for:
+-->Vehicle.h:
+    -  Added explicit to all constructors to prevent implicit conversions.
+    -  Used const std::string& instead of std::string to avoid unnecessary copies.
+    - Marked ElectricCar::runDiagnostics() as final override to prevent further overrides.
+
+-->Vehicle.cpp
+    - Removed redundant semicolons after constructor definitions.
+    - Improved formatting and spacing for readability.
+    - Grouped class implementations with clear section headers.
+
+-->Main.cpp:
+    - Replaced raw array with std::array<Vehicle*, 3> for type safety and clarity.
+    - Used range-based for loop for cleaner iteration.
+    - Added final std::endl for consistent output formatting

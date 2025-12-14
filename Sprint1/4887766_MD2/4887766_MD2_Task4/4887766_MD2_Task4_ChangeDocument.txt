@@ -1,0 +1,5 @@
+Changes made in main.cpp:
+- Used const DTC and const DTC* given clarified const behavior with comments and ensured all method calls respect const constraints.
+- Improved output formatting
+- Inline comments were brief and unstructured adeed expanded comments to explain why certain operations (e.g., activate(), setActive()) are    disallowed on const objects
+

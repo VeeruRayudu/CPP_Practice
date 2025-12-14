@@ -1,0 +1,6 @@
+- Renamed arr to rpmValues.
+- Renamed analyze to analysisFn.
+- Renamed analyzer to analyzeRPMs.
+- Used range-based for loop.
+- Improved prompt formatting.
+- Added early return on invalid choice.

@@ -1,0 +1,11 @@
+Changes made for :
+-->Vehicle.h:
+    - Marked the parameterized constructor as explicit to prevent unintended implicit conversions.
+    - Used const std::string& instead of std::string for constructor parameters to avoid unnecessary copies.
+    - Added a descriptive comment for the #endif directive (// VEHICLE_H)
+
+-->Main.cpp:
+    -  Replaced raw pointer array with std::array<Vehicle*, 3> for type safety and clarity.
+    - Used range-based for loop for cleaner iteration.
+    - Added labeled output sections (Vehicle Status Report) for clarity.
+    - Removed redundant calls to show() before the loop to avoid duplication.

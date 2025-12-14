@@ -1,0 +1,4 @@
+- Renamed lambda parameters: Changed generic names like y, z, a, b to more descriptive ones like val to avoid shadowing and improve clarity.
+- Added output labels: Each std::cout line now includes a label so you can easily identify which lambda produced which result.
+- Each lambda is clearly labeled with its capture strategy (by value, by reference, etc.)
+- Removed #include <array> since it wasn't used.

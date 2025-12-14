@@ -1,0 +1,8 @@
+Changes made in Main.cpp:
+- Manual allocation with new and delete[] for DTC* array, Replaced with std::array<std::unique_ptr<DTC>, 3> for automatic memory cleanup.
+- Indexed for loop with i, Used range-based for loop with external index counter for improved readability.
+- Explicit delete and nullptr assignment for each object and array =is changed to unique_ptr handles destruction automatically.
+- Improved formatting
+
+
+

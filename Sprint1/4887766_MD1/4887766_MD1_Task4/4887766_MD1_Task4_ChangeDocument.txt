@@ -1,0 +1,13 @@
+changes made for:
+-->Main.cpp:
+    - Added section header output: Dynamic Allocation Demo.
+    - Added comment to explain purpose of nullptr assignment.
+    - Improved formatting of printDTCInfo() output.
+    - Added section header output: Leak Demo.
+    - Added section header output: Leak Fix.
+    - Added comment to explain safe cleanup.
+    - Added section header output: Dangling Pointer Demo.
+    - Added message: "safe from undefined behavior".
+    - Improved output formatting for printDTCInfo() calls.
+
+

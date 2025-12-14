@@ -1,0 +1,17 @@
+Sensor.h
+-->- Marked Sensor() as default.
+- Deleted setState(const State&) to enforce rvalue-only updates.
+- Added const qualifiers to getters.
+- Removed redundant comments and grouped logically.
+
+ Sensor.cpp
+- Used std::move(type) in constructor to avoid unnecessary string copies.
+- Moved toString(State) into an anonymous namespace to restrict linkage.
+
+ main.cpp
+- Replaced raw array with std::array<Sensor, 3> for safety and clarity.
+- Used uniform initialization ({}) for object construction.
+- Used auto and const auto& in loops for cleaner syntax.
+- Added null check in logSensorByPtr() for safety.
+- Marked lambda and loop variables as const where applicable.
+

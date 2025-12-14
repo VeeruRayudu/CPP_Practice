@@ -1,0 +1,15 @@
+signalBuffer.h
+-->- Deleted copy constructor and assignment operator to enforce move-only semantics.
+- Added const qualifiers to getters and print().
+
+ SignalBuffer.cpp
+- Used std::move(source) in constructor to avoid unnecessary string copies.
+- Moved toString(Status) into an anonymous namespace.
+- Added null check in logByPtr() for safety.
+
+ main.cpp
+- Replaced raw array with std::array<SignalBuffer, 5> for safety and clarity.
+- Used uniform initialization ({}) for object construction.
+- Used auto and const auto& in loops for cleaner syntax.
+- Grouped output sections with clear headers.
+- Used std::move() in filter loop to demonstrate move semantics.

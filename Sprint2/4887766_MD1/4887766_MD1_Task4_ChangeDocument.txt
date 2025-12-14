@@ -1,0 +1,11 @@
+Changes made for:
+-->safetyFeature.h:
+    - Marked all constructors as explicit to prevent unintended implicit conversions.
+    - Used const std::string& instead of std::string for constructor parameters to avoid unnecessary copies.
+    - Deleted copy constructor using const SafetyFeature& for correctness and clarity.
+    - Added virtual ~SafetyFeature() destructor to ensure proper cleanup of derived classes.
+
+-->Main.cpp :
+    - Used polymorphic references (SafetyFeature&) to demonstrate correct virtual dispatch.
+    - Added labeled output section (Activating Safety Features) for clarity.
+

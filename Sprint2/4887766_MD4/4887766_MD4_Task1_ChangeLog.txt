@@ -1,0 +1,14 @@
+Vehicle.h
+-->- Used default member initializers for all member variables.
+- Simplified constructor parameter names (id_ → id, etc.).
+- Deleted setStatus(const Status&) to enforce rvalue-only updates.
+
+Vehicle.cpp
+-->- Used std::move(model) in constructor to avoid unnecessary string copies.
+- Moved toString(Status) into an anonymous namespace to restrict linkage scope.
+- Added null check in logVehicleByPtr() to prevent dereferencing null pointers.
+
+main.cpp
+-->- Replaced raw array Vehicle vehicles[3] with std::array<Vehicle, 3> for safety and clarity.
+- Used uniform initialization ({}) for object construction.
+- Used auto in range-based loops for cleaner syntax.

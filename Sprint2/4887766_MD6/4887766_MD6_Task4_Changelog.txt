@@ -1,0 +1,5 @@
+- Used std::move in constructor: Moved the std::string instead of copying to improve performance.
+- Grouped vehicle creation into one vector.
+- Moved the nested loop into a helper function applyMaintenanceRules() to separate logic.
+- Used const references in loops.
+- Consistent naming and formatting.

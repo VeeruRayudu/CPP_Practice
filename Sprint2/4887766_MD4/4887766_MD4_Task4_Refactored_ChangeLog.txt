@@ -1,0 +1,8 @@
+TelemetryPacket.h
+-->- Deleted copy constructor and assignment operator to enforce move-only semantics.
+- Added const qualifiers to getters and print().
+
+TelemetryPacket.cpp
+- Used std::move(tag) in constructor to avoid unnecessary string copies.
+- Added null check in logByPtr() for safety.
+- Replaced manual field resets in move operations with default-initialized TelemetryPacket

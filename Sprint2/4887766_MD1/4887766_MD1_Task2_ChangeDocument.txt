@@ -1,0 +1,19 @@
+Changes made for :
+-->ECU.h:
+    - Added explicit to the constructor to prevent unintended implicit conversions.
+    - Clarified ownership of Actuator* actuator
+    - Added consistent header guard comment (// ECU_H)
+
+-->ECU.cpp
+    - Removed unnecessary semicolon after constructor definition.
+    - Used consistent indentation and spacing.
+
+    - Replaced "\n" with std::endl for consistent output flushing.
+    - Clearly separated sensor and actuator status reporting.
+
+-->Main.cpp
+Code Modernization:
+    - Added std::endl after final output for clean termination.
+    - Used descriptive output headers (Initial ECU Status, Updated ECU Status) for clarity.
+    - Added return 0; for explicit program termination.
+

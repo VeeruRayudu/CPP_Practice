@@ -1,0 +1,19 @@
+Changes made for:
+-->DTC.h:
+   -Grouped constructors, getters, setters, and utility methods with clear comment headers.
+   - All getters now marked const.
+   - printDTCInfo() marked const.
+   - All string parameters in setters and constructors changed to const std::string&
+
+-->DTC.cpp:
+    - Used member initializer lists for all constructors.
+    - Copy constructor updated to use initializer list instead of assignment.
+    - All getters marked const.
+    - All string parameters in setters use const std::string&.
+    - toggleMIL() toggles the milOn flag using milOn = !milOn;.
+    - printDTCInfo() uses std::boolalpha for boolean fields.
+    - incrementOccurrence() used ++occurrenceCount;
+    - printDTCInfo() output is cleanly formatted with line breaks and labels.
+    - severityToString() function retained and used for severity display.
+
+    

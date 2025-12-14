@@ -1,0 +1,33 @@
+Changes Made for:
+-->FleetVehicle.h:
+   - Grouped comments for constructors, destructor, getters, setters, and utility methods for better readability.
+   - const qualifiers are added to getter methods and displayInfo() to ensure immutability.
+   - Used const std::string& in parameterized constructor and setters to avoid unnecessary string copies.
+   - Default member initialization added in implementation for safer defaults.
+   - Redundant comments are removed(e.g., “global functions” → replaced with section header).
+   - Added #endif // FLEETVEHICLE_H.
+
+-->FleetVehicle.cpp
+   - Used member initializer lists in both constructors for peformance and clarity.
+   - Removed this-> usage in parameterized constructor.
+   - Added const qualifiers to all getter methods.
+   - Used const std::string& in setDriverName() to avoid string copies.
+   - updateStatus() used ternary operator.
+   - displayInfo() enhanced with std::boolalpha for clearer boolean output.
+   - refuelVehicle() now includes early return for invalid input and clearer messaging.
+   - Removed redundant FleetVehicle:: scope resolution in global functions.
+   - Improved spacing and indentation.
+
+-->Main.cpp
+   - displayMenu() is written into a separate function for clarity.
+   - Created findVehicleByID() helper to reduce repetition.
+   - Used std::getline() for driver name input to support names with spaces instead of cin>>.
+   - Added std::cin.ignore() before getline() to flush newline characters.
+   - Replaced repeated for loops with findVehicleByID() calls.
+   - Added early exit and nullptr checks for better control flow.
+   - Improved output messages formatting.
+   - Removed redundant break statements outside loops.
+   - Fixed misplaced break in case 2 loop.
+
+
+
